@@ -1,7 +1,7 @@
 #coding=gbk
 import random
 
-raw_input("°´Enter¿ªÊ¼")
+input("æŒ‰Enterå¼€å§‹")
 
 arr = ("1", "0")
 
@@ -12,17 +12,22 @@ def drop():
 	global part
 	part = a+b+c
 	if (part == "110") or (part == "011") or (part == "101"):
-		mark1 = "Ò»"#ÉÙÑô
-		print mark1
+		mark1 = "ä¸€"#å°‘é˜³
+		print(mark1)
 	elif (part == "001") or (part == "100") or (part == "010"):
-		mark2 = "--"#ÉÙÒõ
-		print mark2
+		mark2 = "--"#å°‘é˜´
+		print(mark2)
 	elif (part == "111"):
-		mark3 = "Ì«Ñô(±äØ³-ÉÙÒõ)"
-		print mark3
+		mark3 = "å¤ªé˜³(å˜çˆ»-å°‘é˜´)"
+		print(mark3)
 	elif (part == "000"):
-		mark4 = "Ì«Òõ(±äØ³-ÉÙÑô)"
-		print mark4
+		mark4 = "å¤ªé˜´(å˜çˆ»-å°‘é˜³)"
+		print(mark4)
 
 for i in range(6):
 	drop()
+
+yao = ("1","2","3","4","5","6")
+yaors = random.choice(yao)
+print("ç¬¬" + yaors + "çˆ»")
+input()
